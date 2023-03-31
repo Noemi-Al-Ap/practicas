@@ -1,0 +1,19 @@
+CREATE DATABASE practicasminmin;
+--
+--tablas
+--
+CREATE Table practicasminmin.Usuario(
+'Id_Usuario' INT AUTO_INCREMENT NOT NULL,
+'Nombre' VARCHAR(55) NOT NULL,
+'Pasword'VARCHAR(55) NOT NULL,
+'Email'VARCHAR(55) NOT NULL,
+'Id_Tusuario'NOT NULL ,
+PRIMARY KEY(Id_Usuario))
+ENGINE=INODB;
+--
+CREATE Table practicasminmin.Tusuario(
+    'Id_Tusuario'INT AUTO_INCREMENT NOT NULL,
+    'Nombre_Tuser' VARCHAR(55) NOT NULL,
+    'Descripcion' VARCHAR(55) NOT NULL,
+    PRIMARY KEY(Id_Tusuario) )
+    ENGINE=INODB;
